@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <style>
+        .swimming div {
+            border: 1px dashed red;
+            width: 200px;
+        }
+
+        .swimming {
+            position: relative;
+        }
+
+        #ring {
+            /* position: sticky; */
+            /* sticky will be sticked inside parent */
+            /* position fixed will be fixed in all over the page.  */
+            /* top: 0; */
+            /* left: 0; */
+
+            position: relative;
+            z-index: 1;
+
+        }
+
+        #boy {
+            position: relative;
+            top: 75px;
+            z-index: 2;
+        }
+
+        #water {
+            position: relative;
+            top: -75px;
+        }
+
+        
+
+        .dummy {
+            height: 200px;
+            background: indigo;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <h1>This is my Header. </h1>
+        <h1>I am learning positions</h1>
+        <h2>I have higher positions</h2>
+    </section>
+
+   <section class="swimming">
+    <div id="boy"><img src="images/boy.svg" alt=""></div>
+    <div id="ring"><img src="images/ring.svg" alt=""></div>
+    <div id="water"><img src="images/water.svg" alt=""></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+   </section>
+
+   <section>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+       <div class="dummy">Hello</div>
+   </section>
+
+</body>
+
+</html>

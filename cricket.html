@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball</title>
+
+    <style>
+        .field {
+            height: 300px;
+            border: 2px solid green;
+        }
+
+        
+        #bat-div {
+            height: 200px;
+            width: 200px;
+
+            transition: transform 0.2s ease-in; 
+        }
+
+        #bat-div img {
+            width: 120%;
+        }
+
+        #ball-div {
+            height: 50px;
+            width: 50px;
+            background-color: brown;
+            border-radius: 25px;
+
+            position: relative;
+            left: 244px;
+
+            transition: transform 1s ease-out 0.3s;
+        }
+
+        .field:hover #bat-div{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .field:hover #ball-div {
+            transform: translate(800px, -100px)
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="field">
+
+        <div id="bat-div">
+            <img class="bat" src="images/baseball-bat-wood.jpg" alt="">
+        </div>
+
+        <div id="ball-div">
+            
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
